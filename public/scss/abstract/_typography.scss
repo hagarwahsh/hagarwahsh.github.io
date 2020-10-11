@@ -1,0 +1,131 @@
+/*------------------------------------*\
+    # Typography Settings
+\*------------------------------------*/
+
+// Font Family
+$font-family: "apertura", san-serif;
+
+// Base Font for HTML
+$base-font-size-dtp: 15px;
+
+// Paragraph Styles
+$paragraph-line-height: 23px;
+$paragraph-line-height-mob: 18px;
+
+// Headers Styles
+// Desktop FontSizes
+$h1-size-dtp: 50px;
+$h1-line-height: 53px;
+
+$h2-size-dtp: 33px;
+$h2-line-height: 39px;
+
+$h3-size-dtp: 22px;
+$h3-line-height: 27px;
+
+$h4-size-dtp: 26px;
+$h4-line-height: 35px;
+
+// Mobile FontSizes
+$h1-size-mbl: 37px;
+
+$h2-size-mbl: 19px;
+$h2-line-height-mbl: 20px;
+
+$h3-size-mbl: 15px;
+$h3-line-height-mbl: 18px;
+
+$h4-size-mbl: 26px;
+$h4-line-height-mbl: 26px;
+
+$base-font-size-mbl: 14px;
+
+$p-font-size-dtp: 15px;
+
+// Blockquote Styles
+$blockquote-size: 18px;
+$blockquote-line-height: 26px;
+
+// Button text
+$button-text: 14px;
+
+body {
+    font-family: $font-family !important;
+    font-size: $base-font-size-dtp;
+}
+
+h1 {
+    font-size: $h1-size-dtp;
+    line-height: $h1-line-height;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: $h2-size-dtp;
+    line-height: $h2-line-height;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $h3-size-dtp;
+    line-height: $h3-line-height;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: $h4-size-dtp;
+    line-height: $h4-line-height;
+    font-weight: normal;
+}
+
+p,li {
+    font-size: $base-font-size-dtp;
+    line-height: $paragraph-line-height;
+    font-weight: normal;
+}
+.fw-9{
+    font-weight: 900;
+}
+.mg-b20{
+    margin-bottom: 20px;
+}
+.mg-t20{
+    margin-top: 20px;
+}
+q {
+    font-style: italic;
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+    font-family: "fontawesome";
+}
+@media (max-width: 767px) {
+    body {
+        font-size: $base-font-size-mbl;
+    }
+
+    h1 {
+        font-size: $h1-size-mbl;
+    }
+
+    h2 {
+        font-size: $h2-size-mbl;
+        line-height: $h2-line-height-mbl;
+    }
+
+    h3 {
+        font-size: $h3-size-mbl;
+        line-height: $h3-line-height-mbl
+    }
+
+    p {
+        font-size: $base-font-size-mbl;
+        line-height: $paragraph-line-height-mob;
+    }
+}
+
+/*------------------------------------*/

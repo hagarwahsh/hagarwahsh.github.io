@@ -1,0 +1,160 @@
+header {
+    &.header {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+        .logo {
+            margin: 20px 0;
+            display: inline-block;
+
+            img {
+                width: 192px;
+            }
+        }
+
+        .burger-menu {
+            @include for-medium-devices {
+                width: 28px;
+                float: right;
+                margin: 20px 0;
+
+                span {
+                    height: 3px;
+                    margin: 5px 0;
+                    display: block;
+                    border-radius: 2px;
+                    background: $color-primary;
+                    transition: all 0.5s ease;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &.open {
+                span {
+                    &:first-child {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:last-child {
+                        transform: rotate(-45deg) translate(5px, -5px);
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            margin: 14px 0;
+            font-family: $font-family;
+
+            li {
+                margin: 0 25px;
+                display: inline-block;
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    padding: 10px;
+                    display: block;
+                    color: $color-primary;
+
+                    &:hover,
+                    &.active {
+                        text-decoration: none;
+                        color: $color-secondary;
+                    }
+                    &.bordered {
+                        @include btn-Style-desktop();
+                        color: $color-primary;
+                        font-weight: bold;
+                        &.active,
+                        &:hover,
+                        &:focus {
+                            border-color: $color-secondary;
+                            color: $color-secondary;
+                        }
+                    }
+                }
+                /* Landscape */
+                // iphone x
+                @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+                    margin: 0;
+                }
+            }
+
+            @include for-medium-devices {
+                top: 70px;
+                margin: 0;
+                z-index: 1;
+                width: 100%;
+                left: 100vw;
+                padding: 25px;
+                position: absolute;
+                text-align: center;
+                box-sizing: border-box;
+                transition: all 0.3s ease;
+                background: $color-light-grey;
+                box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+                &.visible {
+                    left: 0;
+                    z-index: 2;
+                }
+
+                li {
+                    display: block;
+                    margin: 0;
+                    a {
+                        padding: 10px;
+                        display: block;
+                        &:hover {
+                            color: $color-skyblue;
+                            text-decoration: none;
+                        }
+                        &.black {
+                            color: $color-primary;
+                        }
+                        &.bordered {
+                            border-radius: 18px;
+                            color: $color-primary;
+                            border: 3px solid $border-grey;
+                        }
+                    }
+                }
+                @include for-medium-devices {
+                    top: 70px;
+                    margin: 0;
+                    z-index: 1;
+                    width: 100%;
+                    left: 100vw;
+                    padding: 10px 0 25px;
+                    position: absolute;
+                    text-align: center;
+                    box-sizing: border-box;
+                    transition: all 0.3s ease;
+                    background: $color-light-grey;
+                    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+                    &.visible {
+                        left: 0;
+                    }
+                    li {
+                        display: block;
+                        a {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
