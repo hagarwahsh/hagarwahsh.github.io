@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "homepage": "http://hagarwahsh.github.io/",
+  "name": "dozen",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "blogs for dozen with gatsby and contentful",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -11,7 +12,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "gatsby run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
@@ -30,6 +33,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.1.0"
   },
   "repository": {
