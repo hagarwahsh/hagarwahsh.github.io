@@ -7,7 +7,6 @@
 require('dotenv').config();
 
 module.exports = {
-  pathPrefix: "/hagarwahsh.github.io",
   /* Your site config here */
   plugins: [`gatsby-plugin-sass`,{
     resolve: `gatsby-plugin-manifest`,
