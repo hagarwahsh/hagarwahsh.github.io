@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('/Users/hagarwahsh/Documents/WorkZen PoC/Gatspy PoC/gatsby_poc/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/hagarwahsh/Documents/ITWorx PoCs/github pages/hagarwahsh.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"DoZen","short_name":"DoZen","start_url":"/","background_color":"#6b37bf","theme_color":"#6b37bf","display":"standalone","icon":"src/images/favicon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"13174040511cdc7a5ddf406216b5359d"},
     },{
-      plugin: require('/Users/hagarwahsh/Documents/WorkZen PoC/Gatspy PoC/gatsby_poc/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Users/hagarwahsh/Documents/ITWorx PoCs/github pages/hagarwahsh.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
